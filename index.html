@@ -1,53 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chien工作室</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>欢迎来到Chien工作室</h1>
         <nav>
+            <div class="logo">Chien工作室</div>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="projects.html">项目展示</a></li>
-                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="#home">主页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我们</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section class="hero">
-            <h2>创新与创意的交汇点</h2>
-            <p>在这里，我们将想法变为现实。</p>
-            <button onclick="window.location.href='projects.html'">查看我们的项目</button>
-        </section>
-        
-        <section class="featured-projects">
-            <h2>特色项目</h2>
-            <div class="project-gallery">
-                <div class="project-item">
-                    <img src="assets/images/project1.jpg" alt="项目1">
-                    <h3>项目1</h3>
-                    <p>这是一个精彩的项目简介。</p>
-                </div>
-                <div class="project-item">
-                    <img src="assets/images/project2.jpg" alt="项目2">
-                    <h3>项目2</h3>
-                    <p>这是另一个精彩的项目简介。</p>
-                </div>
-                <!-- 更多项目 -->
+        <section id="home">
+            <div class="hero">
+                <h1>欢迎来到Chien工作室</h1>
+                <p>我们专注于创造和创新。</p>
+                <a href="#about" class="cta-button">了解更多</a>
             </div>
         </section>
+
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>Chien工作室是一家充满活力和创意的公司，致力于为客户提供创新的解决方案和高质量的服务。我们拥有经验丰富的团队，涵盖设计、开发和市场营销各个领域。</p>
+        </section>
+
+        <section id="projects">
+            <h2>我们的项目</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="项目1">
+                    <h3>项目1</h3>
+                    <p>项目1的简要描述。</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project2.jpg" alt="项目2">
+                    <h3>项目2</h3>
+                    <p>项目2的简要描述。</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project3.jpg" alt="项目3">
+                    <h3>项目3</h3>
+                    <p>项目3的简要描述。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <form>
+                <input type="text" placeholder="您的姓名">
+                <input type="email" placeholder="您的邮箱">
+                <textarea placeholder="您的信息"></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
     </main>
-    
+
     <footer>
-        <p>© 2024 Chien工作室. 保留所有权利.</p>
+        <p>&copy; 2024 Chien工作室. 保留所有权利.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
